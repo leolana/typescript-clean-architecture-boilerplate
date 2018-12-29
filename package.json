@@ -14,8 +14,8 @@
       "setup": "npm start config && npm start setup.script",
       "commit": "npx git-cz",
       "precommit": "npm run lint",
-      "commitmsg": "./node_modules/commitlint/cli.js -e $GIT_PARAMS",
-      "prettier": "./node_modules/prettier/bin-prettier.js --write --"
+      "commitmsg": "npx commitlint -e $GIT_PARAMS",
+      "prettier": "npx prettier --write --"
    },
    "dependencies": {
       "body-parser": "^1.18.3",
