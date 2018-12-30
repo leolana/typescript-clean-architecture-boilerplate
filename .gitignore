@@ -34,3 +34,6 @@ test/**/*.js
 test/**/*.js.map
 coverage/
 !test/preprocessor.js
+
+# Environment
+.env
