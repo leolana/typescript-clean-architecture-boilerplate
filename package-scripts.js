@@ -13,7 +13,7 @@ module.exports = {
     start: {
       script: series(
         'nps banner.serve',
-        'cross-env NODE_ENV=production node dist/src/App.js'
+        'cross-env NODE_ENV=production node dist/index.js'
       ),
       description: 'Starts the builded app',
     },
@@ -58,9 +58,9 @@ module.exports = {
         'nps lint',
         'nps clean.dist',
         'nps transpile',
-        'nps copy',
+        // 'nps copy',
         'nps copy.tmp',
-        'nps copy.public',
+        // 'nps copy.public',
         'nps clean.tmp',
       ),
       description: 'Builds the app into the dist directory',
